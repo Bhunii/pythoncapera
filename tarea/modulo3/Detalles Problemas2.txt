@@ -1,0 +1,29 @@
+#1
+Crear un triangulo rectangulo segun la cantida que se digite
+
+#2
+Invertir frase
+
+#3
+Calcular el total de cantidad de horas dormidas en una semana y generar respuestas segun la cantidad
+
+#4
+Crear una lista para ordenar alfabeticamente los nombres de las canciones
+
+#5
+Calcular el promedio de la estatura de un salon, en que separe por género (chicos y chicas).
+
+#6
+Calcular que numero es primo y cual no es primo
+
+#7
+Calcular el resultado de las conversiones entre centímetros, metros y kilómetros. Para ello, se deberá crear una función que realice los cálculos necesarios para convertir una medida en otra y obtener el resultado en la unidad de medida correspondiente
+
+#8
+Calcular si un año es especifico es bisiesto
+
+#9
+Valor mayor de tres numeros digitados	
+
+#10
+Crear un cuestionario de control que respondiendo a la pregunta sumara puntos

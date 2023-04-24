@@ -1,0 +1,16 @@
+#1
+Calcular a lo que equivale el 35% de 50.
+
+#2
+Calcular el area de una circuferencia y solo pedira de entrada el valor de radio.
+
+#3
+Mostrar cociente y residuo de una division
+
+#4
+Calcular la fuerza de un objeto ingresando los datos de masa y aceleracion
+
+#5
+Calcular el volumen de una piramide 
+
+
