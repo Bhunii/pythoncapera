@@ -1,11 +1,15 @@
-a = float(input("Primer numero: "))
-b = float(input("Segundo numero: "))
-c = float(input("Tercero numero: "))
+a = int(input("Primer numero: "))
+b = int(input("Segundo numero: "))
+c = int(input("Tercero numero: "))
 
-numero = a
-if numero > b:
-    numero = b
-if numero > c:
-    numero = c
-        
-print("El mayor es: ", numero)
+
+if a > b:
+    if a > c:
+        print(f'El mayor es {a}')
+    else
+        print(f'El mayor es {b}')
+else:
+    if b > c:
+        print(f'El mayor es {b}')
+
+    
