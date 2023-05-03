@@ -1,0 +1,10 @@
+ejercicio 1 - for
+ejercicio 2 - for
+ejercicio 9 - for
+ejercicio 15 - for
+ejercicio 7 - while
+ejercicio 3 - while
+ejercicio 11 - while
+ejercicio 6 - while
+
+ej14 - lo hizo el profe

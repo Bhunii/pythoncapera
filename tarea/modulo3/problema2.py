@@ -1,4 +1,3 @@
-# Se usa el slicing que es para tomar cierta parte de una lista
-frase = input("Introduce una frase: ")
-frase_invertida = frase[::-1]
-print("La frase invertida es:", frase_invertida)
+frase = input("Introduce una frase: ") #se define variable tipo string con entrada de dato
+frase_invertida = frase[::-1] #el slicing toma la a 'frase' y la invierte que sera guardada en 'frase_invertida'
+print("La frase invertida es:", frase_invertida) #se imprime resultado
