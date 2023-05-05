@@ -65,7 +65,6 @@ if tam%2 != 0:
 
 #desviacion estandar
 resta = []
-cont2=0
 sum2, total2 = 0, 0
 for i in lista:
     r=i - prod
@@ -74,10 +73,9 @@ for i in range(len(resta)):
     resta[i]=resta[i]**2
 for i in range(len(resta)):
     sum2+=resta[i]
-    cont2=cont2+1
     total2=sum2
 total3=sum2//tam
-#print(total3)
+    #print(total3)
 r=total3
 x=0
 while x * x <= total3:
