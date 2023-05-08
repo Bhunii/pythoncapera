@@ -46,15 +46,20 @@ else:
 
 #mediana
 m=lista
-m.sort()
-#for i in range(m):
+#m.sort()
+for i in range(tam):
+    for j in range(i+1,tam):
+        if m[i]>m[j]:
+            aux=m[i]
+            m[i]=m[j]
+            m[j]=aux
 if tam%2 == 0:
     y = (tam // 2) 
     j = y-1
     med = (m[y] + m[j]) / 2
-    print(m)
-    print(m[y])
-    print(m[j])
+    #print(m)
+    #print(m[y])
+    #print(m[j])
     print(f'la mediana es {med}')
 if tam%2 != 0:
     div=tam//2
