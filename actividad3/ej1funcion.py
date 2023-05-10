@@ -26,15 +26,34 @@ def mayorLista(lista):
         if i>mayor:mayor=i
     return mayor
 
-# def ordenAscendente(lista):
-#     for i in range(lista):
-#         for j in range(i+1,lista):
-#             if lista[i]>lista[j]:
-#                 aux=lista[i]
-#                 lista[i]=lista[j]
-#                 lista[j]=aux
-#     return lista
+def ordenAscendente(lista):
+    for i in range(len(lista)):
+        for j in range(i+1,len(lista)):
+            if lista[i]>lista[j]:
+                aux=lista[i]
+                lista[i]=lista[j]
+                lista[j]=aux
+    return lista 
 
+
+def ordenDescendente(lista):
+    for i in range(len(lista)):
+        for j in range(i+1,len(lista)):
+            if lista[i]<lista[j]:
+                aux=lista[i]
+                lista[i]=lista[j]
+                lista[j]=aux
+    return lista
+
+def medianaLista(lista):
+    m=ordenAscendente(lista)
+    if len(lista)%2 == 0:
+        y = (len(lista) // 2) 
+        j = y-1
+        med = (m[y] + m[j]) / 2
+    else:
+        med=len(lista)//2
+    return lista[med]
 
 l1=llenarLista(5,20)
 print(l1)
@@ -42,7 +61,6 @@ print(sumaLista(l1))
 print(promedioLista(l1))
 print(menorLista(l1))
 print(mayorLista(l1))
-
-
-
-
+print(ordenAscendente(l1))
+print(ordenDescendente(l1))
+print(medianaLista(l1))
