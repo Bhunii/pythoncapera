@@ -53,6 +53,7 @@ for i in range(tam):
             aux=m[i]
             m[i]=m[j]
             m[j]=aux
+
 if tam%2 == 0:
     y = (tam // 2) 
     j = y-1
