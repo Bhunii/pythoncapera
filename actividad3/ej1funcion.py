@@ -45,17 +45,45 @@ def ordenDescendente(lista):
                 lista[j]=aux
     return lista
 
+def modaLista(lista):
+    cant=0
+    for i in range(len(lista)):
+        cont=0
+        for j in range(len(lista)):
+            if lista[i] == lista [j]:
+                cont= cont+1
+        if cont>cant:
+            cant = cont 
+            moda = lista[i]
+    if cant == 1:
+        return 'no hay moda'
+    else:
+        return f'la moda es {moda} se repite {cant}'
+    
 def medianaLista(lista):
     m=ordenAscendente(lista)
     if len(lista)%2 == 0:
         y = (len(lista) // 2) 
         j = y-1
-        med = (m[y] + m[j]) / 2
+        med1 = (m[y] + m[j]) / 2
+        #print(m[y],m[j])
+        return med1
     else:
         med=len(lista)//2
-    return lista[med]
+        return lista[med]
 
-l1=llenarLista(5,20)
+def buscarLista(lista, numero):
+    posiciones=[]
+    if numero in lista:
+        for i in range(len(lista)):
+            if lista[i]==numero:
+                posiciones.append(lista[i])    
+                cant=cant+1
+                return f'el {numero} esta en {posiciones} repetido {cant}'
+            else:
+                return f'el {numero} no esta'
+
+l1=llenarLista(10,20)
 print(l1)
 print(sumaLista(l1))
 print(promedioLista(l1))
@@ -63,4 +91,6 @@ print(menorLista(l1))
 print(mayorLista(l1))
 print(ordenAscendente(l1))
 print(ordenDescendente(l1))
+print(modaLista(l1))
 print(medianaLista(l1))
+print(buscarLista(l1,12))
