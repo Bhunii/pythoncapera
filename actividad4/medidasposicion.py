@@ -19,7 +19,7 @@ def ordenAscendente(lista):
 
 def cuartilLista(lista):
     total=[]
-    for i in range(4):
+    for i in range(3):
         i+=1
         cuartil=round(i*((len(lista)+1)/4),3)
         total.append(cuartil)
@@ -28,7 +28,7 @@ def cuartilLista(lista):
 
 def quintilLista(lista):
     total=[]
-    for i in range(5):
+    for i in range(4):
         i+=1
         quintil=round(i*((len(lista)+1)/5),3)
         total.append(quintil)
@@ -42,6 +42,25 @@ def sumaLista(lista):
 
 def promedioLista(lista):
     return sumaLista(lista)/len(lista)
+
+def promedioIndividualCuartil(lista1, lista2):
+    total=[] 
+    aux1=int(lista1[0]//1)
+    res1=lista2[:aux1]
+    prod=promedioLista(res1)
+    total.append(prod)
+    aux2=int(lista1[1]//1)
+    res2=lista2[aux1:aux2]
+    prod1=promedioLista(res2)
+    total.append(prod1)
+    aux3=int(lista1[2]//1)
+    res3=lista2[aux2:aux3]
+    prod2=round(promedioLista(res3),3)
+    total.append(prod2)
+    res4=lista2[aux3:]
+    prod3=round(promedioLista(res4),3)
+    total.append(prod3)
+    return total
 
 def hallarX(lista1, lista2):
     total=[]
@@ -58,6 +77,22 @@ def hallarX(lista1, lista2):
             total.append(res)          
     return(total)
 
+def cuartilListaNumero(lista,numero):
+    total=[]
+    while numero>4:
+        numero=int(input('ingrese otro numero:'))
+    cuartil=round(numero*((len(lista)+1)/4),3)
+    total.append(cuartil)
+    return total
+
+def quintilListaNumero(lista,numero):
+    total=[]
+    while numero>5:
+        numero=int(input('ingrese otro numero:'))
+    cuartil=round(numero*((len(lista)+1)/5),3)
+    total.append(cuartil)
+    return total
+
 #if aux3 in lista2:
     #   aux3=aux3-1
     #   res=lista2[aux3]
@@ -73,4 +108,8 @@ print('promedio cuartiles',promedioLista(cuartilLista(l1)))
 print('promedio quintiles',promedioLista(quintilLista(l1)))
 print('posicion x en cuartiles',hallarX((cuartilLista(l1)),(ordenAscendente(l1))))
 print('posicion x en quintiles',hallarX((quintilLista(l1)),(ordenAscendente(l1))))
-
+num=int(input('ingrese un numero de cuartil:'))
+print('cuartiles',cuartilListaNumero((l1),num))
+num=int(input('ingrese un numero quintil:'))
+print('quintiles',quintilListaNumero((l1),num))
+print('promedio 1 acurtil',promedioIndividualCuartil((cuartilLista(l1)),(ordenAscendente(l1))))
