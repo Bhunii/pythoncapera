@@ -16,30 +16,19 @@ def ordenAscendente(lista):
 
 def cuartilLista(lista):
     total=[]
-    # ordenAscendente(cuartil1)
-    cuartil=1*((len(lista)+1)/4)
-    total.append(cuartil)
-    cuartil=2*((len(lista)+1)/4)
-    total.append(cuartil)
-    cuartil=3*((len(lista)+1)/4)
-    total.append(cuartil)
-    cuartil=4*((len(lista)+1)/4)
-    total.append(cuartil)
+    for i in range(4):
+        i+=1
+        cuartil=i*((len(lista)+1)/4)
+        total.append(cuartil)
     return total
 
 
 def quintilLista(lista):
     total=[]
-    quintil=1*((len(lista)+1)/5)
-    total.append(quintil)
-    quintil=2*((len(lista)+1)/5)
-    total.append(quintil)
-    quintil=3*((len(lista)+1)/5)
-    total.append(quintil)
-    quintil=4*((len(lista)+1)/5)
-    total.append(quintil)
-    quintil=5*((len(lista)+1)/5)
-    total.append(quintil)
+    for i in range(5):
+        i+=1
+        quintil=i*((len(lista)+1)/5)
+        total.append(quintil)
     return total
     
 def sumaLista(lista):
@@ -51,7 +40,7 @@ def sumaLista(lista):
 def promedioLista(lista):
     return sumaLista(lista)/len(lista)
 
-l1=llenarLista(200,2500,100,500)
+l1=llenarLista(10,20,0,100)
 print(ordenAscendente(l1))
 print('cuartiles',cuartilLista(l1))
 print('quintiles',quintilLista(l1))
