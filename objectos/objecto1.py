@@ -1,9 +1,12 @@
 class Persona:
+    lista1=[]
+
     def __init__(self, nombre, documento, curso):
         self.__nombre=nombre
         self.__documento=documento
         self.__cursos=[curso]
-
+        Persona.lista1
+        
     def getNombre (self):
         return self.__nombre
 
@@ -43,16 +46,28 @@ class Persona:
             return (f'si esta el curso {curso}')
         else:
             return (f'no esta el curso {curso}')
+
+    def copiarLista(self):
+        lista1=self.__cursos.copy()
+        print(lista1)
+
+    # def listagen(self):
+    #     persona
     
 p=Persona ('Ana',123,'Ingles')
-print(p.getCursos())
+#print(p.getCursos())
 p.setCursos('Ciencias')
 print(p.getCursos())
-p.setEliminarCurso('Ingles')
-print(p.getCursos())
-p.setModificarCurso('Ciencias','CienciasNaturales')
-print(p.getCursos())
-print(p.BuscarCurso('CienciasNaturales'))
+# p.setEliminarCurso('Ingles')
+# print(p.getCursos())
+# p.setModificarCurso('Ciencias','CienciasNaturales')
+# print(p.getCursos())
+# print(p.BuscarCurso('CienciasNaturales'))
+k=Persona ('Pedro',1333,'Python')
+k.setCursos('Css')
+print(k.getCursos())
+print(Persona.copiarLista)
+
 # print(p.getNombre())
 # p.setNombre("Leidy")
 # print(p.getNombre())
