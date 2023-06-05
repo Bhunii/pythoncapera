@@ -50,10 +50,7 @@ m=lista
 for i in range(tam):
     for j in range(i+1,tam):
         if m[i]>m[j]:
-            aux=m[i]
-            m[i]=m[j]
-            m[j]=aux
-
+                        
 if tam%2 == 0:
     y = (tam // 2) 
     j = y-1

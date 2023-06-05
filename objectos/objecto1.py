@@ -26,12 +26,23 @@ class Persona:
         if aux1 in self.__cursos:
             self.__cursos.remove(aux1)
     
-    def setBuscarCurso(self, aux1, aux2):
-        if aux1 in self.__cursos:
-            
+    def setModificarCurso(self, aux1, aux2):
+        for i in range(len(self.__cursos)):
+            if self.__cursos[i] == aux1:
+                self.__cursos[i] = aux2
+            # else:
+            #     print('curso no esta')
+            # if aux1 in self.__cursos:
+            # self.__cursos=aux1
 
     def getCursos (self):
         return self.__cursos
+    
+    def BuscarCurso (self, curso):
+        if curso in self.__cursos:
+            return (f'si esta el curso {curso}')
+        else:
+            return (f'no esta el curso {curso}')
     
 p=Persona ('Ana',123,'Ingles')
 print(p.getCursos())
@@ -39,6 +50,9 @@ p.setCursos('Ciencias')
 print(p.getCursos())
 p.setEliminarCurso('Ingles')
 print(p.getCursos())
+p.setModificarCurso('Ciencias','CienciasNaturales')
+print(p.getCursos())
+print(p.BuscarCurso('CienciasNaturales'))
 # print(p.getNombre())
 # p.setNombre("Leidy")
 # print(p.getNombre())
