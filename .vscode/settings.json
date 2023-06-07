@@ -1,4 +1,25 @@
 {
-    "workbench.iconTheme": "material-icon-theme",
-    "languageTool.language": "es"
+    "workbench.iconTheme": "vs-seti",
+    "languageTool.language": "es",
+    "editor.semanticHighlighting.enabled": false,
+    "workbench.editor.historyBasedLanguageDetection": false,
+    "workbench.editor.languageDetection": false,
+    "workbench.editor.preferHistoryBasedLanguageDetection": false,
+    "workbench.editor.languageDetectionHints": {
+        "untitledEditors": false,
+        "notebookEditors": false
+    },
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "cSpell.caseSensitive": false,
+    "cSpell.languageSettings": [],
+    "cSpell.ignoreWords": [
+        "Empleado",
+        "Recepcionista",
+        "Stiben",
+        "contador",
+        "incremento",
+        "nombre",
+        "salario",
+        "suma"
+    ]
 }
