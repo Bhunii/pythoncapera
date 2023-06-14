@@ -1,6 +1,4 @@
 from Cliente import *
-from producto import *
-
 class empresa(Cliente):
     def __init__(self, identificador, tipo, nombre, telefono):
         super().__init__(identificador, tipo)

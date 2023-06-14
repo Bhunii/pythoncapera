@@ -1,5 +1,4 @@
 from Cliente import *
-from producto import *
 class Individual(Cliente):
 
     def __init__(self,identification, tipo, nombre, correo, telefono):
