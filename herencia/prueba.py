@@ -11,7 +11,12 @@ ob1.setProducto(prod2)
 print(ob1.getNombre())
 print(ob1.getProducto())
 for producto in ob1.getProducto():
-    print(producto.getNombre())
-#print(ob.getTodo())
+    print(producto.getPrecio())
 
+prod1.descuentoIndividual(0.4)
+prod2.descuentoEmpresa(0.2)
 
+for producto in ob1.getProducto():
+    print(producto.getPrecio())
+
+#

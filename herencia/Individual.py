@@ -1,9 +1,9 @@
 from Cliente import *
-
+from producto import *
 class Individual(Cliente):
 
-    def __init__(self,identificador, tipo, nombre, correo, telefono):
-        super().__init__(identificador, tipo)
+    def __init__(self,identification, tipo, nombre, correo, telefono):
+        super().__init__(identification, tipo)
         self.__nombre=nombre
         self.__correo=correo
         self.__telefono=telefono

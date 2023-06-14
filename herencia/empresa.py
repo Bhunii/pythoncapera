@@ -1,4 +1,5 @@
 from Cliente import *
+from producto import *
 
 class empresa(Cliente):
     def __init__(self, identificador, tipo, nombre, telefono):
@@ -21,6 +22,6 @@ class empresa(Cliente):
     
     def setProducto(self,producto):
         self.__producto.append(producto)
-    
+  
     def getProducto(self):
         return self.__producto

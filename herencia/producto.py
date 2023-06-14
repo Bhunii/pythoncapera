@@ -1,8 +1,9 @@
+
 class Producto:
-    def __init__(self, identificador, nombre, tipo, precio):
+    def __init__(self, identificador, nombre, clase, precio):
         self.__identificador=identificador
         self.__nombre=nombre
-        self.__tipo=tipo
+        self.__clase=clase
         self.__precio=precio
     
     def setIdentificador(self, identificador):
@@ -17,14 +18,21 @@ class Producto:
     def getNombre(self):
         return self.__nombre
     
-    def setTipo(self, tipo):
-        self.__tipo=tipo
+    def setTipo(self, clase):
+        self.__clase=clase
 
     def getTipo(self):
-        return self.__tipo
+        return self.__clase
     
     def setPrecio(self,precio):
-        self.__precio(precio)
+        self.__precio=precio
     
+    def descuentoIndividual(self, descuento):
+        self.__precio=self.__precio*descuento
+   
+    def descuentoEmpresa(self, descuento):
+        self.__precio=self.__precio*descuento
+
     def getPrecio(self):
-        return self.__precio
+        return self.__precio 
+      

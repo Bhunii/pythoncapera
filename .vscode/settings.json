@@ -13,13 +13,32 @@
     "cSpell.caseSensitive": false,
     "cSpell.languageSettings": [],
     "cSpell.ignoreWords": [
+        "Aparato",
+        "Camila",
+        "Clases",
+        "Computador",
+        "Electronico",
         "Empleado",
+        "Empresa",
+        "Identificador",
+        "Maquina",
+        "Precio",
         "Recepcionista",
+        "Shreek",
         "Stiben",
+        "clase",
         "contador",
+        "descuento",
+        "empresa",
+        "identificador",
         "incremento",
         "nombre",
+        "precio",
+        "producto",
         "salario",
         "suma"
+    ],
+    "cSpell.words": [
+        "tipo"
     ]
 }
