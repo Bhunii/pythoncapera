@@ -5,4 +5,4 @@ aux='text.txt'
 #contarLineasAarchivo(aux)
 #dataArchivo(aux)
 print('Cantidad de lineas en el archivo:',contarLineasArchivo(aux))
-contarCaracteresArchivo(aux)
+print('Cantidad de caracteres en el archivo:',contarCaracteresArchivo(aux))

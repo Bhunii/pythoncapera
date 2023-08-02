@@ -53,7 +53,7 @@ def contarCaracteresArchivo(archivo):
             linea=strean.readline()
         strean.close()
         contador_caracteres-=contarLineasArchivo(archivo)
-        print(f'Cantidad de caracteres en el archivo: {contador_caracteres}')
+        return contador_caracteres
     except IOError as e:
         print(f'Se produjo un error: {e}')
 
