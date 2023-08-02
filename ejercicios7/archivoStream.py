@@ -14,7 +14,7 @@ def crearArchivo(archivo):
         except Exception as e:
             print(f'Error al crear el archivo: {e}')
 
-def contarLineasAarchivo(archivo):
+def contarLineasArchivo(archivo):
     try:
         contador_lineas=0
         stream= open(archivo, 'rt')
@@ -23,7 +23,7 @@ def contarLineasAarchivo(archivo):
             contador_lineas += 1
             linea = stream.readline()
         stream.close()
-        print(f'Líneas en el archivo: {contador_lineas}')
+        return contador_lineas
     except IOError as e:
         print(f'Se produjo un error {e}')
 
@@ -37,14 +37,23 @@ def dataArchivo(archivo):
         nro_identificacion=int(input('Digite su numero de identificacion: '))
         stream.write(str(nro_identificacion) + '\n')
         telefono=int(input('Digite su numero telefonico: '))
-        stream.write(str(telefono)+ '\n')        
+        stream.write(str(telefono))        
         stream.close()
     except IOError as e:
         print(f'Se produjo un error: {e}')
 
+def contarCaracteresArchivo(archivo):
+    try:
+        contador_caracteres=0
+        strean = open(archivo, 'rt')
+        linea = strean.readline()
+        while linea != '':
+            for char in linea:
+                contador_caracteres+=1
+            linea=strean.readline()
+        strean.close()
+        contador_caracteres-=contarLineasArchivo(archivo)
+        print(f'Cantidad de caracteres en el archivo: {contador_caracteres}')
+    except IOError as e:
+        print(f'Se produjo un error: {e}')
 
-aux='text.txt'
-crearArchivo(aux)
-contarLineasAarchivo(aux)
-dataArchivo(aux)
-contarLineasAarchivo(aux)
