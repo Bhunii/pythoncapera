@@ -20,9 +20,3 @@ with open('archivos3/csvICFES/personas_icfes.csv', 'w', encoding='utf-8') as fil
     for i in lista:
         file_icfes.write(','.join(str(item) for item in i) + '\n')
      
-        # print('SB estudiante:',row[5])
-        # print('Puntaje Lectura:',row[67])
-        # print('Puntaje Matematicas:',row[70])
-        # print('Puntaje C. Naturales:',row[73])
-        # print('Puntaje Ingles:',row[79])
- 
