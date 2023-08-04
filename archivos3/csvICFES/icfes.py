@@ -2,8 +2,7 @@
 #'archivos3/Resultados_Saber_11_2018-1_Refinado.csv'
 import csv
 lista=[]
-aux='archivos3/icfes/Resultados_Saber_11_2018-1_Refinado.csv'
-with open(aux, encoding='utf-8') as csvDataFile:
+with open('archivos3/csvICFES/Resultados_Saber_11_2018-1_Refinado.csv', encoding='utf-8') as csvDataFile:
     csvReader=csv.reader(csvDataFile)
     next(csvReader)
     for row in csvReader:
@@ -17,7 +16,7 @@ with open(aux, encoding='utf-8') as csvDataFile:
     
         lista.append((estudiante, genero, puntaje_lectura, puntaje_matematicas, puntaje_naturales, puntaje_ingles))
 
-with open('archivos3/icfes/personas_icfes.csv', 'w', encoding='utf-8') as file_icfes:
+with open('archivos3/csvICFES/personas_icfes.csv', 'w', encoding='utf-8') as file_icfes:
     for i in lista:
         file_icfes.write(','.join(str(item) for item in i) + '\n')
      
