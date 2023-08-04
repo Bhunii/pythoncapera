@@ -7,7 +7,7 @@ genero3 = input("Ingresa el tercer género: ")
 
 nueva_pelicula = {titulo,genero1,genero2,genero3}
 
-with open('peliculas.csv', 'a', newline='') as file:
+with open('archivosCSV/peliculas.csv', 'a', newline='') as file:
     escribir=csv.writer(file)
     escribir.writerow(nueva_pelicula)
 

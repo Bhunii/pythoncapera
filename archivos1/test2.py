@@ -1,6 +1,6 @@
 from archivoWith import *
 
-aux='text2.txt'
+aux='archivos/text2.txt'
 #crearArchivo(aux)
 #dataArchivo(aux)
 print('Cantidad de lineas en el archivo:',contarLineasArchivo(aux))

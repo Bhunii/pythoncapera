@@ -11,11 +11,11 @@ for linea in letras.readlines():
         c=0
 letras.close()
 
-print(lista)
+#print(lista)
 
 aux=''
 conteo = open('archivos2/resultado.txt', 'a', encoding='utf-8')
 for i in lista:
-    conteo.write(i)
+    conteo.write(str(i) + '\n')
     i+1
 conteo.close()

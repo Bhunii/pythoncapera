@@ -1,6 +1,6 @@
 from archivoStream import *
 
-aux='text.txt'
+aux='archivos1/text.txt'
 #crearArchivo(aux)
 #contarLineasAarchivo(aux)
 #dataArchivo(aux)
