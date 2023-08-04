@@ -2,8 +2,8 @@
 #'archivos3/Resultados_Saber_11_2018-1_Refinado.csv'
 import csv
 lista=[]
-
-with open('archivos3/icfes/Resultados_Saber_11_2018-1_Refinado.csv', encoding='utf-8') as csvDataFile:
+aux='archivos3/icfes/Resultados_Saber_11_2018-1_Refinado.csv'
+with open(aux, encoding='utf-8') as csvDataFile:
     csvReader=csv.reader(csvDataFile)
     next(csvReader)
     for row in csvReader:
