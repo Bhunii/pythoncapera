@@ -1,5 +1,6 @@
 import mysql.connector
-from funcion import *
+from funciones import *
+from funciones1 import *
 
 base=mysql.connector.connect(
     host="localhost",
@@ -10,8 +11,9 @@ base=mysql.connector.connect(
 
 cursor=base.cursor()
 
-insertarDatos(base,cursor)
-
+# insertarDatos(base,cursor)
+# mostrarDatos(cursor,'candidato')
+eliminarDatos(base,cursor)
 
 
 
